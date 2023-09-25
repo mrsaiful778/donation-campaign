@@ -4,12 +4,13 @@ import MultipleDonation from "./MultipleDonation";
 
 
 
-const Donation = ({card}) => {
-    // const { id, picture, title, category, category_bg_color, card_bg_color, text_color, button_bg_color, description, price, } = card || {}
-
+const Donation = () => {
 
     const [donation, setDonation] = useState ([])
     const [noDonation, setDonations]= useState(false)
+
+    const [isSee, setIsSee] = useState(false)
+
     useEffect(()=>{
         const donationItems = JSON.parse(localStorage.getItem('donationitems'))
 
@@ -28,6 +29,7 @@ const Donation = ({card}) => {
 
     },[])
     console.log(donation);
+    console.log(isSee);
     
 
     return (
@@ -39,9 +41,13 @@ const Donation = ({card}) => {
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5">
                 {
-                    donation.map(card => <MultipleDonation key={card.id} card={card}></MultipleDonation>)
+                    isSee ? donation.map((card )=> <MultipleDonation key={card.id} card={card}></MultipleDonation>)
+                    : donation.slice(0.4).map((card) => <MultipleDonation key={card.id} card={card}></MultipleDonation>)
                 }
             </div>
+            <button onClick={()=> setIsSee(!isSee)} className="px-5 py-3 m-4 rounded-lg bg-green-400 block mx-auto">{isSee ? "See Less" : "See More"}</button>
+            
+            
 
             </div>}
         </div>

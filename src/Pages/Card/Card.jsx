@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import DonationCard from "./DonationCard";
-import Donation from "../Donation/donation";
+
 
 const Card = (props) => {
 
