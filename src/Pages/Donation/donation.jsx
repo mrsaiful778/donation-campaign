@@ -3,10 +3,12 @@ import Banner from "../../components/Header/Banner/Banner";
 
 
 const Donation = () => {
+    
 
     return (
         
         <div>
+            <Cards></Cards>
         </div>
     );
 };

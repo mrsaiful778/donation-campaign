@@ -5,10 +5,12 @@ import Navbar from "../components/Header/Navbar/Navbar";
 const MainLayout = (props) => {
 
     return (
-        
+
         <div className="max-w-[1300px] mx-auto">
-            <Navbar></Navbar>
-            <Outlet></Outlet>
+                <Navbar></Navbar>
+            <div className="py-10">
+                <Outlet></Outlet>
+            </div>
         </div>
     );
 };

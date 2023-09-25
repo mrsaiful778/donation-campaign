@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 
 const DonationCards = ({card}) => {
@@ -8,6 +9,7 @@ const DonationCards = ({card}) => {
         <div>
             <div style={{backgroundColor: card_bg_color}} className="w-[312px] h-[283px] rounded-lg  ">
                
+            <Link to={`/cards/${id}`}>
                 <div>
                     <img src={ picture}></img>
                 </div>
@@ -15,6 +17,9 @@ const DonationCards = ({card}) => {
                     <h1 style={{color: category_bg_color}}>{category}</h1>
                     <h2 style={{color: text_color}}>{title}</h2>
                 </div>
+               
+                </Link>
+               
             </div>
         </div>
     );
