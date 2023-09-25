@@ -1,10 +1,10 @@
-
+import  img from "../../../../public/image/Logo.png"
 
 const Logo = (props) => {
     return (
         
         <div>
-            <img src="./src/assets/image/Logo.png" />
+           <img src={img} alt="" />
         </div>
     );
 };

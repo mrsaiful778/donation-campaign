@@ -6,8 +6,8 @@ const Cards = ({cards}) => {
     console.log(cards);
     return (
         
-        <div>
-            <h1 className="text-2xl text-center">all donation cards</h1>
+        <div className="py-10">
+           
 
             <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5">
                 {

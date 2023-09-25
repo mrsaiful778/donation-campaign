@@ -27,10 +27,10 @@ const DonationCard = ({ card }) => {
         if(!isExits){
             addedDonationList.push(...donationItems,card)
             localStorage.setItem('donationitems', JSON.stringify(addedDonationList))
-            swal("Good job!", "You clicked the button!", "success");
+            swal("Good job!", "You donation done!", "success");
         }
             else{
-                swal("Alreadey!", "You selected donate!", "try another");
+                swal("Already!", "You selected donate!", "try another");
             }
 
        }
