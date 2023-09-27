@@ -14,7 +14,9 @@ const DonationCards = ({card}) => {
                     <img src={ picture}></img>
                 </div>
                 <div className="m-5 space-y-2">
-                    <h1 style={{color: category_bg_color}}>{category}</h1>
+                    <div className="flex">
+                    <h1 style={{backgroundColor: category_bg_color, color: text_color}} className="px-4 rounded-lg">{category} </h1>
+                    </div>
                     <h2 style={{color: text_color}}>{title}</h2>
                 </div>
                

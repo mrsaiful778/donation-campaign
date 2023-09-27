@@ -1,7 +1,7 @@
 
 
 const MultipleDonation = ({ card }) => {
-  const { id, picture, title, category, category_bg_color, card_bg_color, text_color, button_bg_color, description, price, } = card || {}
+  const { id, picture, title, category, category_bg_color, card_bg_color, text_color, button_bg_color, price, } = card || {}
   return (
 
     <div>
@@ -14,7 +14,7 @@ const MultipleDonation = ({ card }) => {
           />
         </div>
         <div className="p-6">
-          <h6 style={{backgroundColor: category_bg_color}} className="  rounded-lg py-3 mb-4 block font-sans text-base font-semibold uppercase leading-relaxed tracking-normal antialiased">
+          <h6 style={{backgroundColor: category_bg_color, color: text_color,}} className=" w-[90px]  rounded-lg py-3 px-3 mb-4 block font-sans text-base font-semibold ">
             {category}
           </h6>
           <h4 className="mb-2 block font-sans text-2xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
@@ -24,8 +24,8 @@ const MultipleDonation = ({ card }) => {
             $ {price}
           </p>
           <a className="inline-block" href="#">
-            <button
-              className="flex select-none items-center gap-2 rounded-lg py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-pink-500 transition-all hover:bg-pink-500/10 active:bg-pink-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+            <button style={{backgroundColor: button_bg_color}}
+              className="text-[#FFF] flex select-none items-center gap-2 rounded-lg py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase  disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
               type="button"
             >
               view detail

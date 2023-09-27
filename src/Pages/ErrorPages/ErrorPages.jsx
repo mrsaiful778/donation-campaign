@@ -4,8 +4,8 @@ const ErrorPages = (props) => {
 
     return (
         
-        <div className="h-screen flex justify-center items-center">
-            error
+        <div className="h-screen flex justify-center items-center text-2xl font-semibold">
+            Error
         </div>
     );
 };

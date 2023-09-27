@@ -23,9 +23,6 @@ const Card = (props) => {
 
 
 
-    console.log(card);
-
-
 
     return (
 
